@@ -1,1 +1,51 @@
-/* Soluzione qui */
+/* Modalità Tablet (>= 768px) */
+@media screen and (min-width: 768px) {
+  /* Il logo nell'header si allinea a sinistra */
+  #topbar {
+    justify-content: flex-start;
+  }
+
+  /* Aumenta il padding del contenuto principale della pagina */
+  main {
+    padding: 30px;
+  }
+
+  /* Far comparire il testo "(Dolce Tradizionale)" */
+  .recipe-origin {
+    display: inline;
+  }
+
+  /* La grandezza del titolo diventa più grande */
+  .recipe-name {
+    font-size: 2.5rem;
+  }
+
+  /* Le informazioni della ricetta sotto il video si dispongono a griglia (con flexbox) */
+  .recipe-info {
+    display: flex;
+    gap: 30px;
+  }
+
+  .quick-notes,
+  .recipe-info .well {
+    flex: 1; /* Distribuisce lo spazio equamente */
+  }
+
+  /* I nomi delle piattaforme social */
+  .social-networks .label {
+    display: inline;
+    margin-left: 5px;
+  }
+
+  /* Compare il banner pubblicitario */
+  .ads {
+    display: block;
+  }
+
+  /* L'immagine nella descrizione della ricetta viene circondata dal testo */
+  .presentation img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
