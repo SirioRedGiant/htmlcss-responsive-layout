@@ -49,3 +49,40 @@
   }
 }
 
+/* Modalità Desktop (>= 992px) */
+@media screen and (min-width: 992px) {
+  /* La grandezza del titolo della ricetta aumenta ancora di più */
+  .recipe-name {
+    font-size: 3rem;
+  }
+
+  /* Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro (con flexbox) */
+  .recipe-card {
+    display: flex;
+  }
+
+  .recipe-video {
+    height: 350px;
+    flex: 0 0 60%; /* Occupa il 60% */
+  }
+
+  .recipe-info {
+    flex: 0 0 40%; /* Occupa il 40% */
+    display: block; /* Resetta a blocco per layout verticale */
+    padding: 30px;
+  }
+  
+  /* I nomi delle piattaforme social sono già visibili */
+
+  /* Nel footer i dati del sito e il menu di navigazione si dispongono sulla stessa linea ma su lati opposti */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer ul {
+    flex-wrap: nowrap;
+  }
+}
+
